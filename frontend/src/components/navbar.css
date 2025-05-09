@@ -1,0 +1,37 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0c2c74;
+    color: white;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.imagelogo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.clock-button {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,177 @@
+/* landing-page.css */
+
+/* General styles for the page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    /* White background for the page */
+    color: navy;
+    /* Navy text for a professional look */
+}
+
+h1,
+h2,
+h3 {
+    color: white;
+    /* Slightly muted blue for headings */
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Styling for the landing header */
+.landing-header {
+    text-align: center;
+    background-color: #1E90FF;
+    /* Slightly muted blue for the header */
+    color: white;
+    padding: 60px 20px;
+    border-bottom: 4px solid navy;
+    /* Dark blue accent for the header */
+}
+
+.landing-header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.landing-header p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #f0f0f0;
+    /* Soft white-gray for subtext */
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: navy;
+    /* Same navy color for all buttons */
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button.login {
+    background-color: navy;
+    /* Navy for login button */
+    color: white;
+}
+
+.cta-button.signup {
+    background-color: navy;
+    /* Orange-red for signup button */
+    color: white;
+}
+
+.cta-button:hover {
+    opacity: 0.9;
+    /* Slightly decrease opacity */
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+}
+
+/* Body content section */
+.body-content {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.body-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #1E90FF;
+    /* Muted blue for section titles */
+}
+
+.body-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background-color: white;
+    /* White cards for features */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    color: navy;
+    /* Navy text for features */
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feature img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.feature h3 {
+    font-size: 22px;
+    margin-top: 15px;
+    color: #1E90FF;
+    /* Muted blue for feature titles */
+}
+
+.feature p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: navy;
+    /* Navy for feature descriptions */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+}
